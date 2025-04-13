@@ -1,0 +1,11 @@
+# Changelog
+
+## [0.1.1] - 2025-04-13
+- Rewrote script to remove Delayed Expansion (now supports `!` in input).
+- Modularized logic into subroutines using `CALL`.
+- Improved path validation and search behavior.
+
+## [0.1.0] - 2025-04-12
+- Initial working version of the batch search script.
+- Supported file content and filename search with logging.
+- Logs saved to `Util` folder on Desktop.
