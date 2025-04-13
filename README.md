@@ -47,9 +47,6 @@ Selected Folder: C:\Program Files (x86)\Steam\steamapps\workshop\content\108600
 C:\Program Files (x86)\\108600\2256623447\mods\Firearms\media\models_x\Skinned\BackPacks
 C:\Program Files (x86)\\108600\2256623447\mods\Firearms\media\models_x\Skinned\BackPacks\AmmoCan_LHand.fbx
 C:\Program Files (x86)\\108600\2256623447\mods\Firearms\media\models_x\Skinned\BackPacks\AmmoCan_RHand.fbx
-C:\Program Files (x86)\\108600\2297098490\mods\ARSENAL(26)GunFighter[MOD 2.0]\media\models_X\Skinned\BackPacks
-C:\Program Files (x86)\\108600\2297098490\mods\ARSENAL(26)GunFighter[MOD 2.0]\media\models_X\Skinned\BackPacks\AmmoCan30_LHand.X
-C:\Program Files (x86)\\108600\2297098490\mods\ARSENAL(26)GunFighter[MOD 2.0]\media\models_X\Skinned\BackPacks\AmmoCan30_RHand.X
 
 *Removed Steam\steamapps\workshop\content from the paths for the format
 
