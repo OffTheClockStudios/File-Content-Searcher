@@ -39,32 +39,6 @@ This simple batch script helps you quickly search through large folders by recur
 
 ---
 
-## Output Example - Filename
-Search Term: backpack
-Selected Folder: C:\Program Files (x86)\Steam\steamapps\workshop\content\108600
-
-=== Matching Files === 
-C:\Program Files (x86)\\108600\2256623447\mods\Firearms\media\models_x\Skinned\BackPacks
-C:\Program Files (x86)\\108600\2256623447\mods\Firearms\media\models_x\Skinned\BackPacks\AmmoCan_LHand.fbx
-C:\Program Files (x86)\\108600\2256623447\mods\Firearms\media\models_x\Skinned\BackPacks\AmmoCan_RHand.fbx
-
-*Removed Steam\steamapps\workshop\content from the paths for better format
-
----
-
-## Output Example - Content
-Search Term: backpack
-Selected Folder: C:\Program Files (x86)\Steam\steamapps\workshop\content\108600
-
-=== Matching Lines in Files === 
-C:\Program Files (x86)\\108600\1299328280\mods\More Traits\42\media\lua\client\MoreTraits.lua:857:        for i, v in ipairs(_iSInventoryPage.backpacks) do
-C:\Program Files (x86)\\108600\1299328280\mods\More Traits\42\media\lua\client\MoreTraits.lua:981:        for i, v in ipairs(_iSInventoryPage.backpacks) do
-C:\Program Files (x86)\\108600\1299328280\mods\More Traits\42\media\lua\client\MoreTraits.lua:1111:        for j, v in ipairs(_iSInventoryPage.backpacks) do
-
-*Removed Steam\steamapps\workshop\content from the paths for better format
-
----
-
 ## 📝 License
 
 Licensed under the [MIT License](LICENSE).
