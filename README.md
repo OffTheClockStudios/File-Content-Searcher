@@ -33,8 +33,34 @@ This simple batch script helps you quickly search through large folders by recur
 ## 📋 Output Details
 
 - Each result includes the **full file path**.
-- If searching **contents**, it also shows the **matching line number**.
-- There is **no file-type filter** currently, so results may include system or binary files — some manual review may be needed.
+- If searching **contents**, it also shows the **matching line number** and the **line**, 
+- There is **no file-type filter** currently, so results may include system, binary, or undesired files — some manual review may be needed.
+- My workflow is to run the filname search to narrow the scope for running the content search (if able)
+
+---
+
+## Output Example - Filename
+Search Term: backpack
+Selected Folder: C:\Program Files (x86)\Steam\steamapps\workshop\content\108600
+
+=== Matching Files === 
+C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\2256623447\mods\Firearms\media\models_x\Skinned\BackPacks
+C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\2256623447\mods\Firearms\media\models_x\Skinned\BackPacks\AmmoCan_LHand.fbx
+C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\2256623447\mods\Firearms\media\models_x\Skinned\BackPacks\AmmoCan_RHand.fbx
+C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\2297098490\mods\ARSENAL(26)GunFighter[MOD 2.0]\media\models_X\Skinned\BackPacks
+C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\2297098490\mods\ARSENAL(26)GunFighter[MOD 2.0]\media\models_X\Skinned\BackPacks\AmmoCan30_LHand.X
+C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\2297098490\mods\ARSENAL(26)GunFighter[MOD 2.0]\media\models_X\Skinned\BackPacks\AmmoCan30_RHand.X
+
+---
+
+## Output Example - Content
+Search Term: backpack
+Selected Folder: C:\Program Files (x86)\Steam\steamapps\workshop\content\108600
+
+=== Matching Lines in Files === 
+C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\1299328280\mods\More Traits\42\media\lua\client\MoreTraits.lua:857:        for i, v in ipairs(_iSInventoryPage.backpacks) do
+C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\1299328280\mods\More Traits\42\media\lua\client\MoreTraits.lua:981:        for i, v in ipairs(_iSInventoryPage.backpacks) do
+C:\Program Files (x86)\Steam\steamapps\workshop\content\108600\1299328280\mods\More Traits\42\media\lua\client\MoreTraits.lua:1111:        for j, v in ipairs(_iSInventoryPage.backpacks) do
 
 ---
 
