@@ -48,7 +48,7 @@ C:\Program Files (x86)\\108600\2256623447\mods\Firearms\media\models_x\Skinned\B
 C:\Program Files (x86)\\108600\2256623447\mods\Firearms\media\models_x\Skinned\BackPacks\AmmoCan_LHand.fbx
 C:\Program Files (x86)\\108600\2256623447\mods\Firearms\media\models_x\Skinned\BackPacks\AmmoCan_RHand.fbx
 
-*Removed Steam\steamapps\workshop\content from the paths for the format
+*Removed Steam\steamapps\workshop\content from the paths for better format
 
 ---
 
@@ -61,7 +61,7 @@ C:\Program Files (x86)\\108600\1299328280\mods\More Traits\42\media\lua\client\M
 C:\Program Files (x86)\\108600\1299328280\mods\More Traits\42\media\lua\client\MoreTraits.lua:981:        for i, v in ipairs(_iSInventoryPage.backpacks) do
 C:\Program Files (x86)\\108600\1299328280\mods\More Traits\42\media\lua\client\MoreTraits.lua:1111:        for j, v in ipairs(_iSInventoryPage.backpacks) do
 
-*Removed Steam\steamapps\workshop\content from the paths for the format
+*Removed Steam\steamapps\workshop\content from the paths for better format
 
 ---
 
