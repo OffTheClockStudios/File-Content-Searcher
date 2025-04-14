@@ -54,7 +54,7 @@ Have suggestions or want to contribute? Feel free to fork the repo, open an issu
 Big thanks to the following contributors and community members:
 
 - [ConsistentHornet4](https://www.reddit.com/user/ConsistentHornet4) — provided testing feedback, batch scripting insights, and support for the v0.1.2 stabilization.
-- [BrainWaveCC](https://github.com/BrainWaveCC) — authored a fork that fixed parsing issues with paths containing parentheses. Inspired the current working structure.
+- [BrainWaveCC](https://github.com/BrainWaveCC) — authored a fork that fixed parsing issues with paths containing parentheses. Created the current working structure.
 - [@amakvana](https://github.com/amakvana) — suggested using `CHOICE` for improved search type selection and input validation.
 
 Your help made this tool more stable, user-friendly, and robust. As well as help me learn my mistakes with batch coding.
