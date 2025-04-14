@@ -1,7 +1,14 @@
-@REM Based on suggestions from ConsistentHornet4
-@REM and fixes from BrainWaveCC's fork:
-@REM https://github.com/BrainWaveCC/File-Content-Searcher/blob/patch-1/Search_Tool.bat
+@REM ============================================================================
+@REM File:         Search_Tool.bat
+@REM Version:      0.1.2
+@REM Updated:      2025-04-14
+@REM Description:  Search files or content in a folder, with logging to Desktop\Util
+@REM Credits:      Based on suggestions from ConsistentHornet4
+@REM               and fixes from BrainWaveCC's fork:
+@REM               https://github.com/BrainWaveCC/File-Content-Searcher/blob/patch-1/Search_Tool.bat
+@REM ============================================================================
 @ECHO OFF
+
  setlocal
 
  rem === Get user input ===
