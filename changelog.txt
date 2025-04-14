@@ -1,6 +1,7 @@
 # Changelog
 
 ## [0.1.2] - 2025-04-14
+- Name changed to search_tool without the version
 - Fixed critical issue with paths containing parentheses (e.g., `C:\Program Files (x86)`).
 - Thanks to a community fix from [BrainWaveCC's fork](https://github.com/BrainWaveCC/File-Content-Searcher/blob/patch-1/Search_Tool.bat).
 - Also thanks to insights from ConsistentHornet4
