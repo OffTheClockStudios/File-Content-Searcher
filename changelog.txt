@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2] - 2025-04-14
+- Fixed critical issue with paths containing parentheses (e.g., `C:\Program Files (x86)`).
+- Thanks to a community fix from [BrainWaveCC's fork](https://github.com/BrainWaveCC/File-Content-Searcher/blob/patch-1/Search_Tool.bat).
+- Also thanks to insights from ConsistentHornet4
+- Replaced manual search type input with `CHOICE` to prevent invalid input.
+- Now accepts only '1' or '2' with built-in error handling.
+- Input Suggestion provided by [@amakvana](https://github.com/amakvana)
+
 ## [0.1.1] - 2025-04-13 - NO GOOD!
 - Modularized logic into subroutines using `CALL`.
 - Attempted a refactor to remove Delayed Expansion and better support special characters in paths (e.g., `()`, spaces, `!`).
