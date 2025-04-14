@@ -3,9 +3,10 @@
 @REM Version:      0.1.2
 @REM Updated:      2025-04-14
 @REM Description:  Search files or content in a folder, with logging to Desktop\Util
-@REM Credits:      Based on suggestions from ConsistentHornet4
+@REM Credits:      Based on suggestions from reddit user ConsistentHornet4
 @REM               and fixes from BrainWaveCC's fork:
 @REM               https://github.com/BrainWaveCC/File-Content-Searcher/blob/patch-1/Search_Tool.bat
+@REM               Input handling improvement suggested by @amakvana
 @REM ============================================================================
 @ECHO OFF
 
@@ -51,12 +52,13 @@
 
 
 :GetSearchType
- echo.
- echo Choose search type:
- echo 1. Search file contents
- echo 2. Search filenames
- set /p "SEARCH_TYPE=Enter 1 or 2: "
- exit /b
+ echo(
+ echo(Choose search type:
+ echo(1. Search file contents 
+ echo(2. Search filenames 
+ choice /c 12 /n /m "Enter option: "
+ set "SEARCH_TYPE=%ERRORLEVEL%"
+exit /b
 
 
 :SetupPaths
