@@ -1,9 +1,10 @@
 # Changelog
 
-## [0.1.1] - 2025-04-13
-- Rewrote script to remove Delayed Expansion (now supports `!` in input).
+## [0.1.1] - 2025-04-13 - NO GOOD!
 - Modularized logic into subroutines using `CALL`.
-- Improved path validation and search behavior.
+- Attempted a refactor to remove Delayed Expansion and better support special characters in paths (e.g., `()`, spaces, `!`).
+- This version introduced critical parsing issues in certain environments (e.g., paths with parentheses).
+- Reverting to 0.1.0 as the stable version until a solution is found.
 
 ## [0.1.0] - 2025-04-12
 - Initial working version of the batch search script.
