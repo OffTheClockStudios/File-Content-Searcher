@@ -1,37 +1,48 @@
 @REM ============================================================================
 @REM File:         Search_Tool.bat
-@REM Version:      0.1.2
-@REM Updated:      2025-04-14
-@REM Description:  Search files or content in a folder, with logging to Desktop\Util
-@REM Credits:      Based on suggestions from reddit user ConsistentHornet4
-@REM               and fixes from BrainWaveCC's fork:
-@REM               https://github.com/BrainWaveCC/File-Content-Searcher/blob/patch-1/Search_Tool.bat
-@REM               Input handling improvement suggested by @amakvana
+@REM Version:      0.1.3
+@REM Updated:      2025-04-25
+@REM Description:  Search files or content in a folder with logging; now loops  
+@REM               (choice: 1=reuse folder, 2=new folder)  
+@REM Credits:      reddit user ConsistentHornet4 (improvement suggestions)
+@REM               @BrainWaveCC fork (term-handling correction)
+@REM               @amakvana (issue raised to utilize CHOICE for input)
 @REM ============================================================================
+
 @ECHO OFF
 
  setlocal
 
- rem === Get user input ===
- call :GetFolderPath
- call :GetSearchTerm
- call :GetSearchType
- call :SetupPaths
+:MainLoop
+    rem — ask for folder
+    call :GetFolderPath
 
- rem === Log and perform search ===
- call :InitLog
- if "%SEARCH_TYPE%"=="1" (
-	 call :SearchContents
- ) else (
-	 call :SearchFilenames
- )
+:SearchLoop
+    rem — ask for term & type each iteration
+    call :GetSearchTerm
+    call :GetSearchType
+    call :SetupPaths
 
- rem === Wrap up ===
- echo:
- echo Search complete. Results saved in: %LOG_FILE%
- pause
- exit /b
+    rem — run & log
+    call :InitLog
+    if "%SEARCH_TYPE%"=="1" (
+        call :SearchContents
+    ) else (
+        call :SearchFilenames
+    )
 
+    rem — done, ask if we reuse this folder
+    echo.
+    echo Search complete. Results saved in: %LOG_FILE%
+    choice /c 12 /n /m "1=Search again using the same folder    2=Select a new folder"
+    rem ERRORLEVEL will be 1 if they press “1”, 2 if they press “2”
+    if "%ERRORLEVEL%"=="1" (
+        cls
+        goto SearchLoop
+    ) else (
+        cls
+        goto MainLoop
+    )
 
  rem === Subroutines ===
 
