@@ -1,60 +1,77 @@
-# 🔍 File-Content-Searcher
+# File-Content-Searcher
 
-This simple batch script helps you quickly search through large folders by recursively scanning for a specified term. You can choose to search within **filenames** or **file contents**. It prompts for the target folder, search term, and method of search. Results are logged to a file in a folder named `Util` on your Desktop.
-
----
-
-## 🧰 What It Does
-
-- ✅ Recursively searches all subfolders
-- 🔎 Lets you choose between searching:
-  - File **names**
-  - File **contents**
-- 📄 Logs results to a text file:
-  - `search_filename_log.txt` or `search_content_log.txt`
-- 💻 Fully command-line-based — no installation needed
-- 🆚 Offers a lightweight alternative to File Explorer and Notepad++ search
+A portable Windows batch script for quickly finding files or text within folders.  
+Recursively scans subdirectories, logs results to a “Util” folder on your Desktop, and offers a choice-driven interface.
 
 ---
 
-## 🚀 How to Use
+## Features
 
-1. **Run** the batch file by double-clicking it.
-2. **Enter or paste the folder path** to search (e.g., `C:\Users\YourName\Documents`)
-3. **Enter the search term** (case-insensitive)
-4. **Choose the search type**:
-   - `1` — search **within file contents**
-   - `2` — search **by filename**
-5. View the results:
-   - Output is saved to your **Desktop** under `Util\search_content_log.txt` or `search_filename_log.txt`
-
----
-
-## 📋 Output Details
-
-- Each result includes the **full file path**.
-- If searching **contents**, it also shows the **matching line number** and the **line**, 
-- There is **no file-type filter** currently, so results may include system, binary, or undesired files — some manual review may be needed.
-- My workflow is to run the filname search to narrow the scope for running the content search (if able)
+- **Recursive search** through all subfolders  
+- **Two modes**:
+  1. Search **inside file contents** (line number + matching text)  
+  2. Search **by filename**  
+- **Continuous loop**: after each run, choose to:
+  - 🔄 reuse the same folder  
+  - 📂 select a new folder  
+- **Plain-text logs** in `Util\search_content_log.txt` or `Util\search_filename_log.txt`
 
 ---
 
-## 📝 License
+## Installation
 
-Licensed under the [MIT License](LICENSE).
+No installation required—just download `Search_Tool.bat` and place it wherever you like.
 
 ---
 
-## 💬 Feedback
+## Usage
 
-Have suggestions or want to contribute? Feel free to fork the repo, open an issue, or submit a pull request.
+1. **Double-click** `Search_Tool.bat`.  
+2. **Enter folder path** to scan.  
+3. **Enter search term** (case-insensitive).  
+4. **Choose search type**:
+   - `1` — file **contents**  
+   - `2` — **filenames**  
+5. Review results in the log file on your Desktop.  
+6. **When prompted**, press `1` to search again in the same folder or `2` to pick a new one.  
 
-## 🙌 Acknowledgements
+---
 
-Big thanks to the following contributors and community members:
+## Limitations
 
-- [ConsistentHornet4](https://www.reddit.com/user/ConsistentHornet4) — provided testing feedback, batch scripting insights, and support for the v0.1.2 stabilization.
-- [BrainWaveCC](https://github.com/BrainWaveCC) — authored a fork that fixed parsing issues with paths containing parentheses. Created the current working structure.
-- [@amakvana](https://github.com/amakvana) — suggested using `CHOICE` for improved search type selection and input validation.
+- There is **no file-type filter** currently, so results may include system, binary, or undesired files.
+- Very large folders may produce large log files; consider narrowing your scope with filename search first.
 
-Your help made this tool more stable, user-friendly, and robust. As well as help me learn my mistakes with batch coding.
+---
+
+## Changelog
+
+### 0.1.3 (2025-04-25)
+- Added continuous loop with “reuse folder” or “new folder” choice  
+- Bumped version and updated header comments  
+
+### 0.1.2 (2025-04-14)
+- Fixed parsing of paths containing parentheses  
+- Switched to `CHOICE` for search-type input  
+
+### 0.1.1 (2025-04-13) - **no good due to parsing/path issues**
+- Modularized logic into subroutines (`CALL`)  
+- Attempted to remove Delayed Expansion support  
+- Introduced parsing issues; reverted to 0.1.0  
+
+### 0.1.0 (2025-04-12)
+- Initial release: recursive filename/content search with Desktop\Util logs  
+
+---
+
+## Contributors
+
+- **ConsistentHornet4** — improvement suggestions  
+- **BrainWaveCC** — term-handling fixes (paths with parentheses)  
+- **@amakvana** — introduced `CHOICE` prompt for robust input  
+
+---
+
+## License
+
+This project is released under the [MIT License](LICENSE).  
