@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.3] - 2025-04-25
+- Bumped version to 0.1.3 and updated header comments accordingly  
+- Introduced `MainLoop`/`SearchLoop` structure so the script never exits unless closed  
+- Added `CHOICE` prompt at end of each run (1 = reuse same folder, 2 = select a new folder)  
+- Preserved existing `CHOICE` in `:GetSearchType` for contents vs. filenames  
+
 ## [0.1.2] - 2025-04-14
 - Name changed to search_tool without the version
 - Fixed critical issue with paths containing parentheses (e.g., `C:\Program Files (x86)`).
