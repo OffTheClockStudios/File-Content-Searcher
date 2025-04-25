@@ -9,11 +9,11 @@ Recursively scans subdirectories, logs results to a “Util” folder on your De
 
 - **Recursive search** through all subfolders  
 - **Two modes**:
-  1. Search **inside file contents** (line number + matching text)  
-  2. Search **by filename**  
+  - `1` — Search **inside file contents** (line number + matching text)  
+  - `2` — Search **by filename**  
 - **Continuous loop**: after each run, choose to:
-  - 🔄 reuse the same folder  
-  - 📂 select a new folder  
+  - `1` — reuse the same folder  
+  - `2` — select a new folder  
 - **Plain-text logs** in `Util\search_content_log.txt` or `Util\search_filename_log.txt`
 
 ---
