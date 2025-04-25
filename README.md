@@ -67,8 +67,8 @@ No installation required—just download `Search_Tool.bat` and place it wherever
 ## Contributors
 
 - **ConsistentHornet4** — improvement suggestions  
-- **BrainWaveCC** — term-handling fixes (paths with parentheses)  
-- **@amakvana** — introduced `CHOICE` prompt for robust input  
+- **@BrainWaveCC** — term-handling fixes (paths with parentheses)  
+- **@amakvana** — introduced `CHOICE` prompt for input-handling 
 
 ---
 
