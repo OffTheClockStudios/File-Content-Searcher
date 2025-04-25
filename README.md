@@ -43,7 +43,6 @@ No installation required—just download `Search_Tool.bat` and place it wherever
 - Very large folders may produce large log files; consider narrowing your scope with filename search first.
 
 ---
-
 ## Changelog
 
 ### 0.1.3 (2025-04-25)
@@ -62,6 +61,7 @@ No installation required—just download `Search_Tool.bat` and place it wherever
 ### 0.1.0 (2025-04-12)
 - Initial release: recursive filename/content search with Desktop\Util logs  
 
+### SEE changelog.txt for more details
 ---
 
 ## Contributors
